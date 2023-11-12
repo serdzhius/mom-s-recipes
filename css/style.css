@@ -396,6 +396,10 @@ textarea.input {
   text-align: center;
 }
 
+.recipe-card__item-subtitle--notes {
+  margin-top: 2vh;
+}
+
 .recipe-card table {
   border-collapse: collapse;
   border: 2px solid black;
@@ -428,11 +432,33 @@ textarea.input {
 .recipe-card__item-text p {
   font-size: 1.125rem;
   font-weight: 500;
-  text-indent: 20px;
+  text-indent: 1.25rem;
 }
 
 .recipe-card__item-text p + p {
   margin-top: 0.25rem;
+}
+
+.recipe-card__item-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 0.625rem;
+     -moz-column-gap: 0.625rem;
+          column-gap: 0.625rem;
+  margin-left: 1.25rem;
+}
+
+.recipe-card__item-link img {
+  max-width: 3.125rem;
+}
+
+.recipe-card__item-link p {
+  text-indent: 0;
+  border-bottom: 2px solid var(--bd-Color);
 }
 
 .header__container {
@@ -475,10 +501,6 @@ textarea.input {
 
 .header__search-results a + a {
   margin-top: 0.25rem;
-}
-
-.footer {
-  background-color: #544d72;
 }
 
 .categories {
