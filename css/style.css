@@ -402,7 +402,7 @@ textarea.input {
 .recipe-card__item-subtitle {
   font-size: 1.25rem;
   font-weight: 700;
-  margin-bottom: 1vh;
+  margin-bottom: 0.625rem;
 }
 
 .recipe-card__item-subtitle--center {
@@ -410,7 +410,7 @@ textarea.input {
 }
 
 .recipe-card__item-subtitle--notes {
-  margin-top: 2vh;
+  margin-top: 0.9375rem;
 }
 
 .recipe-card table {
@@ -418,7 +418,7 @@ textarea.input {
   border: 2px solid black;
   max-width: 40rem;
   width: 100%;
-  margin: 0 auto 2vh;
+  margin: 0 auto 0.9375rem;
   background-color: var(--bg-Color);
 }
 
@@ -522,8 +522,6 @@ textarea.input {
 
 .header__input {
   display: block;
-  -ms-grid-column-span: 3;
-  grid-column: span 3;
 }
 
 .header__search-results {
