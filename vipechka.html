@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20231122140459">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231123222413">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,9 @@
 		<header class="header">
 			<div class="header__container">
 				<a class="header__link" href="index.html">На главную</a>
-				<input id="search" class="header__input input" autocomplete="off" type="search" name="form[]" placeholder="Поиск">
+				<div class="header__counter"></div>
+				<h4 class="header__title">Выпечка</h4>
+				<input id="search" class="input" autocomplete="off" type="search" name="form[]" placeholder="Поиск">
 				<div id="results" class="header__search-results"></div>
 			</div>
 		</header>
@@ -32,9 +34,17 @@
 			<section class="vipechka">
 				<div class="vipechka__container">
 					<article id="vipechka-1" class="vipechka__item recipe-card">
-						<h2 class="recipe-card__item-title">
-							Блины
-						</h2>
+						<div class="recipe-card__top">
+							<button class="button__left" type="button">
+								<img src="img/arrow.svg" alt="left">
+							</button>
+							<h2 class="recipe-card__item-title">
+								Блины
+							</h2>
+							<button class="button__right" type="button">
+								<img src="img/arrow.svg" alt="right">
+							</button>
+						</div>
 						<table>
 							<h3 class="recipe-card__item-subtitle">Состав:</h3>
 							<tr>
@@ -68,9 +78,17 @@
 						</table>
 					</article>
 					<article id="vipechka-2" class="vipechka__item recipe-card">
-						<h2 class="recipe-card__item-title">
-							Хачапури
-						</h2>
+						<div class="recipe-card__top">
+							<button class="button__left" type="button">
+								<img src="img/arrow.svg" alt="left">
+							</button>
+							<h2 class="recipe-card__item-title">
+								Хачапури
+							</h2>
+							<button class="button__right" type="button">
+								<img src="img/arrow.svg" alt="right">
+							</button>
+						</div>
 						<table>
 							<h3 class="recipe-card__item-subtitle recipe-card__item-subtitle--part">Состав теста:</h3>
 							<tr>
@@ -128,9 +146,17 @@
 						</div>
 					</article>
 					<article id="vipechka-3" class="vipechka__item recipe-card">
-						<h2 class="recipe-card__item-title">
-							Пирожки с картошкой
-						</h2>
+						<div class="recipe-card__top">
+							<button class="button__left" type="button">
+								<img src="img/arrow.svg" alt="left">
+							</button>
+							<h2 class="recipe-card__item-title">
+								Пирожки с картошкой
+							</h2>
+							<button class="button__right" type="button">
+								<img src="img/arrow.svg" alt="right">
+							</button>
+						</div>
 						<table>
 							<h3 class="recipe-card__item-subtitle">Состав:</h3>
 							<tr>
@@ -182,9 +208,17 @@
 						</div>
 					</article>
 					<article id="vipechka-4" class="vipechka__item recipe-card">
-						<h2 class="recipe-card__item-title">
-							Чебуреки
-						</h2>
+						<div class="recipe-card__top">
+							<button class="button__left" type="button">
+								<img src="img/arrow.svg" alt="left">
+							</button>
+							<h2 class="recipe-card__item-title">
+								Чебуреки
+							</h2>
+							<button class="button__right" type="button">
+								<img src="img/arrow.svg" alt="right">
+							</button>
+						</div>
 						<table>
 							<h3 class="recipe-card__item-subtitle recipe-card__item-subtitle--part">Состав теста:</h3>
 							<tr>
@@ -226,9 +260,17 @@
 						</div>
 					</article>
 					<article id="vipechka-5" class="vipechka__item recipe-card">
-						<h2 class="recipe-card__item-title">
-							Оладьи
-						</h2>
+						<div class="recipe-card__top">
+							<button class="button__left" type="button">
+								<img src="img/arrow.svg" alt="left">
+							</button>
+							<h2 class="recipe-card__item-title">
+								Оладьи
+							</h2>
+							<button class="button__right" type="button">
+								<img src="img/arrow.svg" alt="right">
+							</button>
+						</div>
 						<table>
 							<h3 class="recipe-card__item-subtitle">Состав:</h3>
 							<tr>
@@ -272,9 +314,17 @@
 						</div>
 					</article>
 					<article id="vipechka-6" class="vipechka__item recipe-card">
-						<h2 class="recipe-card__item-title">
-							Драники с ветчиной и сыром
-						</h2>
+						<div class="recipe-card__top">
+							<button class="button__left" type="button">
+								<img src="img/arrow.svg" alt="left">
+							</button>
+							<h2 class="recipe-card__item-title">
+								Драники с ветчиной и сыром
+							</h2>
+							<button class="button__right" type="button">
+								<img src="img/arrow.svg" alt="right">
+							</button>
+						</div>
 						<table>
 							<h3 class="recipe-card__item-subtitle">Состав:</h3>
 							<tr>
@@ -311,9 +361,17 @@
 						</div>
 					</article>
 					<article id="vipechka-7" class="vipechka__item recipe-card">
-						<h2 class="recipe-card__item-title">
-							Вареники
-						</h2>
+						<div class="recipe-card__top">
+							<button class="button__left" type="button">
+								<img src="img/arrow.svg" alt="left">
+							</button>
+							<h2 class="recipe-card__item-title">
+								Вареники
+							</h2>
+							<button class="button__right" type="button">
+								<img src="img/arrow.svg" alt="right">
+							</button>
+						</div>
 						<table>
 							<h3 class="recipe-card__item-subtitle recipe-card__item-subtitle--part">Состав теста:</h3>
 							<tr>
@@ -376,9 +434,17 @@
 						</div>
 					</article>
 					<article id="vipechka-8" class="vipechka__item recipe-card">
-						<h2 class="recipe-card__item-title">
-							Треугольник с колбасой
-						</h2>
+						<div class="recipe-card__top">
+							<button class="button__left" type="button">
+								<img src="img/arrow.svg" alt="left">
+							</button>
+							<h2 class="recipe-card__item-title">
+								Треугольник с колбасой
+							</h2>
+							<button class="button__right" type="button">
+								<img src="img/arrow.svg" alt="right">
+							</button>
+						</div>
 						<table>
 							<h3 class="recipe-card__item-subtitle">Состав:</h3>
 							<tr>
@@ -426,9 +492,17 @@
 						</div>
 					</article>
 					<article id="vipechka-9" class="vipechka__item recipe-card">
-						<h2 class="recipe-card__item-title">
-							Беляши
-						</h2>
+						<div class="recipe-card__top">
+							<button class="button__left" type="button">
+								<img src="img/arrow.svg" alt="left">
+							</button>
+							<h2 class="recipe-card__item-title">
+								Беляши
+							</h2>
+							<button class="button__right" type="button">
+								<img src="img/arrow.svg" alt="right">
+							</button>
+						</div>
 						<table>
 							<h3 class="recipe-card__item-subtitle">Состав:</h3>
 							<tr>
@@ -466,9 +540,17 @@
 						</table>
 					</article>
 					<article id="vipechka-10" class="vipechka__item recipe-card">
-						<h2 class="recipe-card__item-title">
-							Сметанник
-						</h2>
+						<div class="recipe-card__top">
+							<button class="button__left" type="button">
+								<img src="img/arrow.svg" alt="left">
+							</button>
+							<h2 class="recipe-card__item-title">
+								Сметанник
+							</h2>
+							<button class="button__right" type="button">
+								<img src="img/arrow.svg" alt="right">
+							</button>
+						</div>
 						<h3 class="recipe-card__item-subtitle recipe-card__item-subtitle--center">В духовке.</h3>
 						<table>
 							<h3 class="recipe-card__item-subtitle">Состав:</h3>
@@ -505,9 +587,17 @@
 						</div>
 					</article>
 					<article id="vipechka-11" class="vipechka__item recipe-card">
-						<h2 class="recipe-card__item-title">
-							Бублики
-						</h2>
+						<div class="recipe-card__top">
+							<button class="button__left" type="button">
+								<img src="img/arrow.svg" alt="left">
+							</button>
+							<h2 class="recipe-card__item-title">
+								Бублики
+							</h2>
+							<button class="button__right" type="button">
+								<img src="img/arrow.svg" alt="right">
+							</button>
+						</div>
 						<table>
 							<h3 class="recipe-card__item-subtitle">Состав:</h3>
 							<h3 class="recipe-card__item-subtitle recipe-card__item-subtitle--center">В духовке.</h3>
@@ -553,7 +643,7 @@
 			</section>
 		</main>
 	</div>
-	<script src="js/app.min.js?_v=20231122140459"></script>
+	<script src="js/app.min.js?_v=20231123222413"></script>
 </body>
 
 </html>

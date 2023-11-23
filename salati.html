@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20231122140459">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231123222413">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,9 @@
 		<header class="header">
 			<div class="header__container">
 				<a class="header__link" href="index.html">На главную</a>
-				<input id="search" class="header__input input" autocomplete="off" type="search" name="form[]" placeholder="Поиск">
+				<div class="header__counter"></div>
+				<h4 class="header__title">Салаты</h4>
+				<input id="search" class="input" autocomplete="off" type="search" name="form[]" placeholder="Поиск">
 				<div id="results" class="header__search-results"></div>
 			</div>
 		</header>
@@ -32,9 +34,17 @@
 			<section class="salati">
 				<div class="salati__container">
 					<article id="salati-1" class="salati__item recipe-card">
-						<h2 class="recipe-card__item-title">
-							Салат с кукурузой и сервелатом
-						</h2>
+						<div class="recipe-card__top">
+							<button class="button__left" type="button">
+								<img src="img/arrow.svg" alt="left">
+							</button>
+							<h2 class="recipe-card__item-title">
+								Салат с кукурузой и сервелатом
+							</h2>
+							<button class="button__right" type="button">
+								<img src="img/arrow.svg" alt="right">
+							</button>
+						</div>
 						<table>
 							<h3 class="recipe-card__item-subtitle">Состав:</h3>
 							<tr>
@@ -70,9 +80,17 @@
 						</div>
 					</article>
 					<article id="salati-2" class="salati__item recipe-card">
-						<h2 class="recipe-card__item-title">
-							Салат с фасолью
-						</h2>
+						<div class="recipe-card__top">
+							<button class="button__left" type="button">
+								<img src="img/arrow.svg" alt="left">
+							</button>
+							<h2 class="recipe-card__item-title">
+								Салат с фасолью
+							</h2>
+							<button class="button__right" type="button">
+								<img src="img/arrow.svg" alt="right">
+							</button>
+						</div>
 						<table>
 							<h3 class="recipe-card__item-subtitle">Состав:</h3>
 							<tr>
@@ -100,9 +118,17 @@
 						</div>
 					</article>
 					<article id="salati-3" class="salati__item recipe-card">
-						<h2 class="recipe-card__item-title">
-							Салат с косичкой
-						</h2>
+						<div class="recipe-card__top">
+							<button class="button__left" type="button">
+								<img src="img/arrow.svg" alt="left">
+							</button>
+							<h2 class="recipe-card__item-title">
+								Салат с косичкой
+							</h2>
+							<button class="button__right" type="button">
+								<img src="img/arrow.svg" alt="right">
+							</button>
+						</div>
 						<table>
 							<h3 class="recipe-card__item-subtitle">Состав:</h3>
 							<tr>
@@ -142,9 +168,17 @@
 						</div>
 					</article>
 					<article id="salati-4" class="salati__item recipe-card">
-						<h2 class="recipe-card__item-title">
-							Салат с филе и пекинской капустой
-						</h2>
+						<div class="recipe-card__top">
+							<button class="button__left" type="button">
+								<img src="img/arrow.svg" alt="left">
+							</button>
+							<h2 class="recipe-card__item-title">
+								Салат с филе и пекинской капустой
+							</h2>
+							<button class="button__right" type="button">
+								<img src="img/arrow.svg" alt="right">
+							</button>
+						</div>
 						<table>
 							<h3 class="recipe-card__item-subtitle">Состав:</h3>
 							<tr>
@@ -176,9 +210,17 @@
 						</div>
 					</article>
 					<article id="salati-5" class="salati__item recipe-card">
-						<h2 class="recipe-card__item-title">
-							Салат с филе №2
-						</h2>
+						<div class="recipe-card__top">
+							<button class="button__left" type="button">
+								<img src="img/arrow.svg" alt="left">
+							</button>
+							<h2 class="recipe-card__item-title">
+								Салат с филе №2
+							</h2>
+							<button class="button__right" type="button">
+								<img src="img/arrow.svg" alt="right">
+							</button>
+						</div>
 						<table>
 							<h3 class="recipe-card__item-subtitle">Состав:</h3>
 							<tr>
@@ -214,9 +256,17 @@
 						</div>
 					</article>
 					<article id="salati-6" class="salati__item recipe-card">
-						<h2 class="recipe-card__item-title">
-							Салат с филе и грибами
-						</h2>
+						<div class="recipe-card__top">
+							<button class="button__left" type="button">
+								<img src="img/arrow.svg" alt="left">
+							</button>
+							<h2 class="recipe-card__item-title">
+								Салат с филе и грибами
+							</h2>
+							<button class="button__right" type="button">
+								<img src="img/arrow.svg" alt="right">
+							</button>
+						</div>
 						<table>
 							<h3 class="recipe-card__item-subtitle">Состав:</h3>
 							<tr>
@@ -248,9 +298,17 @@
 						</div>
 					</article>
 					<article id="salati-7" class="salati__item recipe-card">
-						<h2 class="recipe-card__item-title">
-							Салат "Грибы под шубой"
-						</h2>
+						<div class="recipe-card__top">
+							<button class="button__left" type="button">
+								<img src="img/arrow.svg" alt="left">
+							</button>
+							<h2 class="recipe-card__item-title">
+								Салат "Грибы под шубой"
+							</h2>
+							<button class="button__right" type="button">
+								<img src="img/arrow.svg" alt="right">
+							</button>
+						</div>
 						<table>
 							<h3 class="recipe-card__item-subtitle">Состав:</h3>
 							<tr>
@@ -293,9 +351,17 @@
 						</div>
 					</article>
 					<article id="salati-8" class="salati__item recipe-card">
-						<h2 class="recipe-card__item-title">
-							Салат с филе с грибами и морковкой
-						</h2>
+						<div class="recipe-card__top">
+							<button class="button__left" type="button">
+								<img src="img/arrow.svg" alt="left">
+							</button>
+							<h2 class="recipe-card__item-title">
+								Салат с филе с грибами и морковкой
+							</h2>
+							<button class="button__right" type="button">
+								<img src="img/arrow.svg" alt="right">
+							</button>
+						</div>
 						<table>
 							<h3 class="recipe-card__item-subtitle">Состав:</h3>
 							<tr>
@@ -330,14 +396,23 @@
 						<div class="recipe-card__item-text">
 							<h3 class="recipe-card__item-subtitle">Приготовление:</h3>
 							<p>
-								Грибы обжарить и отдельно обжарить лук и морковь. Порезать куриную грудку и яйца. Сыр потереть. Перемешать всё с майонезом.
+								Грибы обжарить и отдельно обжарить лук и морковь. Порезать куриную грудку и яйца. Сыр потереть.
+								Перемешать всё с майонезом.
 							</p>
 						</div>
 					</article>
 					<article id="salati-9" class="salati__item recipe-card">
-						<h2 class="recipe-card__item-title">
-							Бусы на снегу
-						</h2>
+						<div class="recipe-card__top">
+							<button class="button__left" type="button">
+								<img src="img/arrow.svg" alt="left">
+							</button>
+							<h2 class="recipe-card__item-title">
+								Бусы на снегу
+							</h2>
+							<button class="button__right" type="button">
+								<img src="img/arrow.svg" alt="right">
+							</button>
+						</div>
 						<table>
 							<h3 class="recipe-card__item-subtitle">Состав:</h3>
 							<tr>
@@ -377,9 +452,17 @@
 						</div>
 					</article>
 					<article id="salati-10" class="salati__item recipe-card">
-						<h2 class="recipe-card__item-title">
-							Салат со шпротами
-						</h2>
+						<div class="recipe-card__top">
+							<button class="button__left" type="button">
+								<img src="img/arrow.svg" alt="left">
+							</button>
+							<h2 class="recipe-card__item-title">
+								Салат со шпротами
+							</h2>
+							<button class="button__right" type="button">
+								<img src="img/arrow.svg" alt="right">
+							</button>
+						</div>
 						<table>
 							<h3 class="recipe-card__item-subtitle">Состав:</h3>
 							<tr>
@@ -411,9 +494,17 @@
 						</div>
 					</article>
 					<article id="salati-11" class="salati__item recipe-card">
-						<h2 class="recipe-card__item-title">
-							Салат со свежей капусты и сарделек
-						</h2>
+						<div class="recipe-card__top">
+							<button class="button__left" type="button">
+								<img src="img/arrow.svg" alt="left">
+							</button>
+							<h2 class="recipe-card__item-title">
+								Салат со свежей капусты и сарделек
+							</h2>
+							<button class="button__right" type="button">
+								<img src="img/arrow.svg" alt="right">
+							</button>
+						</div>
 						<table>
 							<h3 class="recipe-card__item-subtitle">Состав:</h3>
 							<tr>
@@ -445,9 +536,17 @@
 						</div>
 					</article>
 					<article id="salati-12" class="salati__item recipe-card">
-						<h2 class="recipe-card__item-title">
-							Салат с ветчиной и сухариками
-						</h2>
+						<div class="recipe-card__top">
+							<button class="button__left" type="button">
+								<img src="img/arrow.svg" alt="left">
+							</button>
+							<h2 class="recipe-card__item-title">
+								Салат с ветчиной и сухариками
+							</h2>
+							<button class="button__right" type="button">
+								<img src="img/arrow.svg" alt="right">
+							</button>
+						</div>
 						<table>
 							<h3 class="recipe-card__item-subtitle">Состав:</h3>
 							<tr>
@@ -495,9 +594,17 @@
 						</div>
 					</article>
 					<article id="salati-13" class="salati__item recipe-card">
-						<h2 class="recipe-card__item-title">
-							Мясной салат
-						</h2>
+						<div class="recipe-card__top">
+							<button class="button__left" type="button">
+								<img src="img/arrow.svg" alt="left">
+							</button>
+							<h2 class="recipe-card__item-title">
+								Мясной салат
+							</h2>
+							<button class="button__right" type="button">
+								<img src="img/arrow.svg" alt="right">
+							</button>
+						</div>
 						<table>
 							<h3 class="recipe-card__item-subtitle">Состав:</h3>
 							<tr>
@@ -529,9 +636,17 @@
 						</div>
 					</article>
 					<article id="salati-14" class="salati__item recipe-card">
-						<h2 class="recipe-card__item-title">
-							Салат с сосисками
-						</h2>
+						<div class="recipe-card__top">
+							<button class="button__left" type="button">
+								<img src="img/arrow.svg" alt="left">
+							</button>
+							<h2 class="recipe-card__item-title">
+								Салат с сосисками
+							</h2>
+							<button class="button__right" type="button">
+								<img src="img/arrow.svg" alt="right">
+							</button>
+						</div>
 						<table>
 							<h3 class="recipe-card__item-subtitle">Состав:</h3>
 							<tr>
@@ -563,9 +678,17 @@
 						</div>
 					</article>
 					<article id="salati-15" class="salati__item recipe-card">
-						<h2 class="recipe-card__item-title">
-							Салат с копченой куриной грудкой
-						</h2>
+						<div class="recipe-card__top">
+							<button class="button__left" type="button">
+								<img src="img/arrow.svg" alt="left">
+							</button>
+							<h2 class="recipe-card__item-title">
+								Салат с копченой куриной грудкой
+							</h2>
+							<button class="button__right" type="button">
+								<img src="img/arrow.svg" alt="right">
+							</button>
+						</div>
 						<table>
 							<h3 class="recipe-card__item-subtitle">Состав:</h3>
 							<tr>
@@ -612,9 +735,17 @@
 						</div>
 					</article>
 					<article id="salati-16" class="salati__item recipe-card">
-						<h2 class="recipe-card__item-title">
-							Мимоза
-						</h2>
+						<div class="recipe-card__top">
+							<button class="button__left" type="button">
+								<img src="img/arrow.svg" alt="left">
+							</button>
+							<h2 class="recipe-card__item-title">
+								Мимоза
+							</h2>
+							<button class="button__right" type="button">
+								<img src="img/arrow.svg" alt="right">
+							</button>
+						</div>
 						<table>
 							<h3 class="recipe-card__item-subtitle">Состав:</h3>
 							<tr>
@@ -643,9 +774,17 @@
 						</div>
 					</article>
 					<article id="salati-17" class="salati__item recipe-card">
-						<h2 class="recipe-card__item-title">
-							Салат с копчёным окорочком или сервелатом
-						</h2>
+						<div class="recipe-card__top">
+							<button class="button__left" type="button">
+								<img src="img/arrow.svg" alt="left">
+							</button>
+							<h2 class="recipe-card__item-title">
+								Салат с копчёным окорочком или сервелатом
+							</h2>
+							<button class="button__right" type="button">
+								<img src="img/arrow.svg" alt="right">
+							</button>
+						</div>
 						<table>
 							<h3 class="recipe-card__item-subtitle">Состав:</h3>
 							<tr>
@@ -683,9 +822,17 @@
 						</div>
 					</article>
 					<article id="salati-18" class="salati__item recipe-card">
-						<h2 class="recipe-card__item-title">
-							Рыбки в пруду
-						</h2>
+						<div class="recipe-card__top">
+							<button class="button__left" type="button">
+								<img src="img/arrow.svg" alt="left">
+							</button>
+							<h2 class="recipe-card__item-title">
+								Рыбки в пруду
+							</h2>
+							<button class="button__right" type="button">
+								<img src="img/arrow.svg" alt="right">
+							</button>
+						</div>
 						<table>
 							<h3 class="recipe-card__item-subtitle">Состав:</h3>
 							<tr>
@@ -726,7 +873,7 @@
 			</section>
 		</main>
 	</div>
-	<script src="js/app.min.js?_v=20231122140459"></script>
+	<script src="js/app.min.js?_v=20231123222413"></script>
 </body>
 
 </html>

@@ -150,7 +150,7 @@ body {
 */
 
 [class*=__container] {
-  max-width: 89.375rem;
+  max-width: 64.375rem;
   margin: 0 auto;
   padding: 0 0.9375rem;
 }
@@ -167,9 +167,9 @@ textarea {
 .input {
   border-radius: 0.3125rem;
   width: 100%;
-  display: block;
   padding: 0.25rem 1.25rem;
   border: 1px solid #222;
+  display: none;
 }
 
 textarea.input {
@@ -369,12 +369,34 @@ textarea.input {
   padding: 0.9375rem 0;
 }
 
+.recipe-card--index {
+  display: none;
+}
+
+.recipe-card__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 0.3125rem;
+}
+
+.recipe-card__top img {
+  max-width: 1.875rem;
+}
+
 .recipe-card__item-title {
+  display: block;
   font-size: 1.5rem;
   font-weight: 700;
   font-style: italic;
   text-align: center;
-  margin-bottom: 3vh;
+  padding: 0 0.1875rem;
 }
 
 .recipe-card__item-subtitle {
@@ -396,7 +418,7 @@ textarea.input {
   border: 2px solid black;
   max-width: 40rem;
   width: 100%;
-  margin-bottom: 3vh;
+  margin: 0 auto 2vh;
   background-color: var(--bg-Color);
 }
 
@@ -452,19 +474,34 @@ textarea.input {
   border-bottom: 2px solid var(--bd-Color);
 }
 
+.button__right {
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
 .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 3.125rem;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0.3125rem auto;
   position: relative;
 }
 
 .header__container:has(.header__link) {
-  gap: 0.9375rem;
+  gap: 0.3125rem;
+}
+
+.header__container:has(.header__title) {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .header__link {
@@ -472,6 +509,21 @@ textarea.input {
   font-size: 1.25rem;
   font-weight: 700;
   white-space: nowrap;
+}
+
+.header__counter {
+  text-align: center;
+  font-weight: 700;
+}
+
+.header__counter--index {
+  display: none;
+}
+
+.header__input {
+  display: block;
+  -ms-grid-column-span: 3;
+  grid-column: span 3;
 }
 
 .header__search-results {
@@ -492,6 +544,13 @@ textarea.input {
 
 .header__search-results a + a {
   margin-top: 0.25rem;
+}
+
+.header__title {
+  text-align: right;
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-style: italic;
 }
 
 .categories {

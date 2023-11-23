@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20231122140459">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231123222413">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,10 +23,17 @@
 		</div>
 		<header class="header">
 			<div class="header__container">
+				<div class="header__counter header__counter--index"></div>
 				<input id="search" class="header__input input" autocomplete="off" type="search" name="form[]" placeholder="Поиск">
 				<div id="results" class="header__search-results"></div>
 			</div>
 		</header>
+		<article class="recipe-card recipe-card--index">
+			<div class="recipe-card__top">
+				<button class="button__left" type="button"></button>
+				<button class="button__right" type="button"></button>
+			</div>
+		</article>
 		<main class="page">
 			<section class="categories">
 				<div class="categories__container">
@@ -258,7 +265,7 @@
 			</section>
 		</main>
 	</div>
-	<script src="js/app.min.js?_v=20231122140459"></script>
+	<script src="js/app.min.js?_v=20231123222413"></script>
 </body>
 
 </html>

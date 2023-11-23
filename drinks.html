@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20231122140459">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231123222413">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,9 @@
 		<header class="header">
 			<div class="header__container">
 				<a class="header__link" href="index.html">На главную</a>
-				<input id="search" class="header__input input" autocomplete="off" type="search" name="form[]" placeholder="Поиск">
+				<div class="header__counter"></div>
+				<h4 class="header__title">Напитки</h4>
+				<input id="search" class="input" autocomplete="off" type="search" name="form[]" placeholder="Поиск">
 				<div id="results" class="header__search-results"></div>
 			</div>
 		</header>
@@ -32,9 +34,17 @@
 			<section class="drinks">
 				<div class="drinks__container">
 					<article id="drinks-1" class="drinks__item recipe-card">
-						<h2 class="recipe-card__item-title">
-							Квас
-						</h2>
+						<div class="recipe-card__top">
+							<button class="button__left" type="button">
+								<img src="img/arrow.svg" alt="left">
+							</button>
+							<h2 class="recipe-card__item-title">
+								Квас
+							</h2>
+							<button class="button__right" type="button">
+								<img src="img/arrow.svg" alt="right">
+							</button>
+						</div>
 						<table>
 							<h3 class="recipe-card__item-subtitle">Состав:</h3>
 							<tr>
@@ -69,9 +79,17 @@
 						</div>
 					</article>
 					<article id="drinks-2" class="drinks__item recipe-card">
-						<h2 class="recipe-card__item-title">
-							Мохито
-						</h2>
+						<div class="recipe-card__top">
+							<button class="button__left" type="button">
+								<img src="img/arrow.svg" alt="left">
+							</button>
+							<h2 class="recipe-card__item-title">
+								Мохито
+							</h2>
+							<button class="button__right" type="button">
+								<img src="img/arrow.svg" alt="right">
+							</button>
+						</div>
 						<table>
 							<h3 class="recipe-card__item-subtitle recipe-card__item-subtitle--part">На 3-х литровый бутыль:</h3>
 							<tr>
@@ -97,9 +115,17 @@
 						</div>
 					</article>
 					<article id="drinks-3" class="drinks__item recipe-card">
-						<h2 class="recipe-card__item-title">
-							Фанта
-						</h2>
+						<div class="recipe-card__top">
+							<button class="button__left" type="button">
+								<img src="img/arrow.svg" alt="left">
+							</button>
+							<h2 class="recipe-card__item-title">
+								Фанта
+							</h2>
+							<button class="button__right" type="button">
+								<img src="img/arrow.svg" alt="right">
+							</button>
+						</div>
 						<table>
 							<h3 class="recipe-card__item-subtitle recipe-card__item-subtitle--part">На 3-х литровый бутыль:</h3>
 							<tr>
@@ -134,7 +160,7 @@
 			</section>
 		</main>
 	</div>
-	<script src="js/app.min.js?_v=20231122140459"></script>
+	<script src="js/app.min.js?_v=20231123222413"></script>
 </body>
 
 </html>

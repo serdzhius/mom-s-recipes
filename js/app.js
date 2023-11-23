@@ -340,7 +340,7 @@
             document.body.classList.remove("loaded_hiding");
         }), 500);
     };
-    var id = location.hash;
+    let id = location.hash;
     if (id) document.querySelector(id).style.display = "block";
     const input = document.getElementById("search");
     const results = document.getElementById("results");
@@ -371,6 +371,55 @@
             input.value = "";
             results.innerHTML = "";
         }
+    }));
+    let children = document.querySelectorAll(".recipe-card");
+    let buttonsLeft = document.querySelectorAll(".button__left");
+    let buttonsRight = document.querySelectorAll(".button__right");
+    function nextChild() {
+        for (let i = 0; i < children.length; i++) if (children[i].style.display === "block") {
+            children[i].style.display = "none";
+            if (i === children.length - 1) children[0].style.display = "block"; else children[i + 1].style.display = "block";
+            break;
+        }
+    }
+    function previousChild() {
+        for (let i = 0; i < children.length; i++) if (children[i].style.display === "block") {
+            children[i].style.display = "none";
+            if (i === 0) children[children.length - 1].style.display = "block"; else children[i - 1].style.display = "block";
+            break;
+        }
+    }
+    for (let i = 0; i < buttonsLeft.length; i++) buttonsLeft[i].addEventListener("click", previousChild);
+    for (let i = 0; i < buttonsRight.length; i++) buttonsRight[i].addEventListener("click", nextChild);
+    document.addEventListener("DOMContentLoaded", (function() {
+        function updateCounter() {
+            var articles = Array.from(document.querySelectorAll("article[id]"));
+            var total = articles.length;
+            articles.forEach((function(article) {
+                var style = window.getComputedStyle(article);
+                if (style.display === "block") {
+                    var id = article.id;
+                    var parts = id.split("-");
+                    if (parts.length > 1 && !isNaN(parts[1])) {
+                        var number = parts[1];
+                        document.querySelector(".header__counter").textContent = number + " / " + total;
+                    }
+                }
+            }));
+        }
+        updateCounter();
+        var observer = new MutationObserver((function(mutations) {
+            mutations.forEach((function(mutation) {
+                if (mutation.type === "attributes" && mutation.attributeName === "style") updateCounter();
+            }));
+        }));
+        var articles = document.querySelectorAll("article[id]");
+        articles.forEach((function(article) {
+            observer.observe(article, {
+                attributes: true
+            });
+        }));
+        document.querySelector("button").addEventListener("click", (function() {}));
     }));
     window["FLS"] = true;
     isWebp();
