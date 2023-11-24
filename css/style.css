@@ -352,6 +352,7 @@ textarea.input {
 }
 
 .recipe-card {
+  display: none;
   padding: 0.9375rem 0;
 }
 
