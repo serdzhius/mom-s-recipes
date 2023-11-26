@@ -478,23 +478,19 @@ textarea.input {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 0.3125rem auto;
+  position: relative;
+}
+
+.header__container:not(.header__container--index) {
   position: absolute;
+  margin: 0;
   top: 0.3125rem;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
       -ms-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
   width: 100%;
-}
-
-.header__container--index {
-  margin: 0.3125rem auto;
-  position: relative;
-  top: 0;
-  left: 0;
-  -webkit-transform: translate(0, 0);
-      -ms-transform: translate(0, 0);
-          transform: translate(0, 0);
 }
 
 .header__container:has(.header__link) {
@@ -523,8 +519,8 @@ textarea.input {
 
 .header__search-results {
   position: absolute;
-  top: 3.125rem;
-  left: 0.9375rem;
+  top: 2.5rem;
+  left: 0.625rem;
   width: calc(100% - 1.25rem);
   background-color: var(--bg-Color);
   z-index: 1;
