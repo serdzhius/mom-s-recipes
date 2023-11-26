@@ -421,11 +421,6 @@
         }));
         document.querySelector("button").addEventListener("click", (function() {}));
     }));
-    window.addEventListener("DOMContentLoaded", (function() {
-        const scrollPosition = window.scrollY;
-        window.location.hash = "";
-        window.scrollTo(0, scrollPosition);
-    }), false);
     window["FLS"] = true;
     isWebp();
     spollers();

@@ -137,9 +137,9 @@ body {
 */
 
 [class*=__container] {
-  max-width: 64.375rem;
+  max-width: 63.75rem;
   margin: 0 auto;
-  padding: 0 0.9375rem;
+  padding: 0 0.625rem;
 }
 
 input[type=text],
@@ -353,7 +353,8 @@ textarea.input {
 
 .recipe-card {
   display: none;
-  padding: 0.9375rem 0;
+  padding-top: 2.5rem;
+  padding-bottom: 0.9375rem;
 }
 
 .recipe-card--index {
@@ -364,9 +365,9 @@ textarea.input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -477,8 +478,23 @@ textarea.input {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: absolute;
+  top: 0.3125rem;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  width: 100%;
+}
+
+.header__container--index {
   margin: 0.3125rem auto;
   position: relative;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
 }
 
 .header__container:has(.header__link) {
@@ -509,7 +525,7 @@ textarea.input {
   position: absolute;
   top: 3.125rem;
   left: 0.9375rem;
-  width: calc(100% - 1.875rem);
+  width: calc(100% - 1.25rem);
   background-color: var(--bg-Color);
   z-index: 1;
 }
