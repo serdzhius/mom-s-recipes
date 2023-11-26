@@ -478,7 +478,7 @@ textarea.input {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0.3125rem auto;
+  margin: 0.3125rem auto 0;
   position: relative;
 }
 
