@@ -517,16 +517,19 @@ textarea.input {
   display: block;
 }
 
+.no-webp .header__search-results{
+  background-image: url("../img/bg-image.jpg"); }
+
 .header__search-results {
   position: absolute;
   top: 2.5rem;
   left: 0.625rem;
   width: calc(100% - 1.25rem);
-  background-color: var(--bg-Color);
   z-index: 1;
 }
 
 .header__search-results a {
+  background-color: var(--bg-Color);
   display: block;
   padding: 0.5rem 1.25rem;
   border: 1px solid #222;
@@ -535,6 +538,10 @@ textarea.input {
 
 .header__search-results a + a {
   margin-top: 0.25rem;
+}
+
+.header__search-results a:last-child {
+  margin-bottom: 0.3125rem;
 }
 
 .header__title {
@@ -616,3 +623,5 @@ textarea.input {
 }
 
 .webp body{ background-image: url(../img/bg-image.webp); }
+
+.webp .header__search-results{ background-image: url(../img/bg-image.webp); }
