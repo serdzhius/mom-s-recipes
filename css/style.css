@@ -357,10 +357,6 @@ textarea.input {
   padding-bottom: 0.9375rem;
 }
 
-.recipe-card--index {
-  display: none;
-}
-
 .recipe-card__top {
   display: -webkit-box;
   display: -ms-flexbox;
