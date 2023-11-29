@@ -333,13 +333,13 @@
             }));
         }
     }), 0);
-    window.onload = function() {
+    window.addEventListener("load", (function() {
         document.body.classList.add("loaded_hiding");
-        window.setTimeout((function() {
+        setTimeout((function() {
             document.body.classList.add("loaded");
             document.body.classList.remove("loaded_hiding");
         }), 500);
-    };
+    }));
     let id = location.hash;
     if (id) document.querySelector(id).style.display = "block";
     const input = document.getElementById("search");
@@ -356,13 +356,14 @@
         }));
         if (searchText === "") results.innerHTML = ""; else if (filteredElements.length > 0) {
             results.innerHTML = "";
-            if (filteredElements.length > 0) filteredElements.forEach((element => {
+            filteredElements.forEach((element => {
                 const link = document.createElement("a");
                 const href = element.querySelector(".recipes__link").getAttribute("href");
                 link.href = href;
                 link.textContent = element.textContent;
                 results.appendChild(link);
-            })); else results.textContent = "Совпадений нет";
+            }));
+            if (filteredElements.length === 0) results.textContent = "Совпадений нет";
         }
     }));
     document.addEventListener("click", (function(event) {
@@ -376,59 +377,52 @@
         let children = document.querySelectorAll(".recipe-card");
         let buttonsLeft = document.querySelectorAll(".button__left");
         let buttonsRight = document.querySelectorAll(".button__right");
+        function showChild(index) {
+            children.forEach(((child, i) => {
+                child.style.display = i === index ? "block" : "none";
+            }));
+            const currentUrl = window.location.href;
+            const parts = currentUrl.split("-");
+            const newUrl = parts.slice(0, -1).join("-") + `-${index + 1}`;
+            window.location.href = newUrl;
+        }
         function nextChild() {
-            for (let i = 0; i < children.length; i++) if (children[i].style.display === "block") {
-                children[i].style.display = "none";
-                if (i === children.length - 1) {
-                    children[0].style.display = "block";
-                    window.location.href = window.location.href.split("-")[0] + "-1";
-                } else {
-                    children[i + 1].style.display = "block";
-                    window.location.href = window.location.href.split("-")[0] + "-" + (i + 2);
-                }
-                break;
-            }
+            let currentIndex = Array.from(children).findIndex((child => child.style.display === "block"));
+            let nextIndex = currentIndex === children.length - 1 ? 0 : currentIndex + 1;
+            showChild(nextIndex);
         }
         function previousChild() {
-            for (let i = 0; i < children.length; i++) if (children[i].style.display === "block") {
-                children[i].style.display = "none";
-                if (i === 0) {
-                    children[children.length - 1].style.display = "block";
-                    window.location.href = window.location.href.split("-")[0] + "-" + children.length;
-                } else {
-                    children[i - 1].style.display = "block";
-                    window.location.href = window.location.href.split("-")[0] + "-" + i;
-                }
-                break;
-            }
+            let currentIndex = Array.from(children).findIndex((child => child.style.display === "block"));
+            let previousIndex = currentIndex === 0 ? children.length - 1 : currentIndex - 1;
+            showChild(previousIndex);
         }
-        for (let i = 0; i < buttonsLeft.length; i++) buttonsLeft[i].addEventListener("click", previousChild);
-        for (let i = 0; i < buttonsRight.length; i++) buttonsRight[i].addEventListener("click", nextChild);
+        buttonsLeft.forEach((button => button.addEventListener("click", previousChild)));
+        buttonsRight.forEach((button => button.addEventListener("click", nextChild)));
     }
     document.addEventListener("DOMContentLoaded", (function() {
         function updateCounter() {
-            var articles = Array.from(document.querySelectorAll("article[id]"));
-            var total = articles.length;
-            articles.forEach((function(article) {
-                var style = window.getComputedStyle(article);
+            const articles = Array.from(document.querySelectorAll("article[id]"));
+            const total = articles.length;
+            articles.forEach((article => {
+                const style = window.getComputedStyle(article);
                 if (style.display === "block") {
-                    var id = article.id;
-                    var parts = id.split("-");
+                    const id = article.id;
+                    const parts = id.split("-");
                     if (parts.length > 1 && !isNaN(parts[1])) {
                         const number = parts[1];
-                        document.querySelector(".header__counter").textContent = number + " / " + total;
+                        document.querySelector(".header__counter").textContent = `${number} / ${total}`;
                     }
                 }
             }));
         }
         updateCounter();
-        var observer = new MutationObserver((function(mutations) {
-            mutations.forEach((function(mutation) {
+        const observer = new MutationObserver((function(mutations) {
+            mutations.forEach((mutation => {
                 if (mutation.type === "attributes" && mutation.attributeName === "style") updateCounter();
             }));
         }));
-        var articles = document.querySelectorAll("article[id]");
-        articles.forEach((function(article) {
+        const articles = document.querySelectorAll("article[id]");
+        articles.forEach((article => {
             observer.observe(article, {
                 attributes: true
             });
