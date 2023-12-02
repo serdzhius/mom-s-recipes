@@ -3,10 +3,10 @@
 @charset "UTF-8";
 
 :root {
-  --textColor: #222;
+  --textColor: #111;
   --accent: #0eb3ff;
   --bg-Color: #e7e7e7;
-  --bd-Color: #222;
+  --bd-Color: #111;
 }
 
 * {
@@ -42,7 +42,7 @@ body {
   color: var(--textColor);
   line-height: 1.2;
   font-family: "Open Sans";
-  font-size: 1rem;
+  font-size: 1.125rem;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -104,6 +104,7 @@ h6 {
 
 body {
   background-color: var(--bg-Color);
+  font-weight: 500;
 }
 
 .lock body {
@@ -295,7 +296,7 @@ textarea.input {
   position: absolute;
   right: 1rem;
   top: 50%;
-  background-color: #222;
+  background-color: var(--bd-Color);
   height: 2px;
   width: 0.9375rem;
   -webkit-transition: -webkit-transform 0.5s ease 0s;
@@ -410,7 +411,6 @@ textarea.input {
 .recipe-card table td {
   border: 1px solid black;
   padding: 0.375rem;
-  font-weight: 500;
 }
 
 .recipe-card table th {
@@ -427,7 +427,7 @@ textarea.input {
 }
 
 .recipe-card__item-text p {
-  font-size: 1.125rem;
+  font-size: 1.1875rem;
   font-weight: 500;
   text-indent: 1.25rem;
 }
@@ -502,6 +502,7 @@ textarea.input {
 
 .header__counter {
   text-align: center;
+  font-size: 1rem;
   font-weight: 700;
 }
 
@@ -528,7 +529,7 @@ textarea.input {
   background-color: var(--bg-Color);
   display: block;
   padding: 0.5rem 1.25rem;
-  border: 1px solid #222;
+  border: 1px solid #111;
   border-radius: 0.3125rem;
 }
 
@@ -561,8 +562,7 @@ textarea.input {
 
 .recipes__link {
   display: block;
-  font-size: 1.125rem;
-  font-weight: 500;
+  font-size: 1.1875rem;
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
 }
