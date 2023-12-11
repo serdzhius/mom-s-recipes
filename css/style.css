@@ -571,6 +571,10 @@ textarea.input {
   color: var(--accent);
 }
 
+.recipes__link span {
+  white-space: nowrap;
+}
+
 @media (min-width: 29.99875em) {
   .spollers__body {
     padding: 0.5rem 1rem 1rem;
