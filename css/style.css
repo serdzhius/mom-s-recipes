@@ -426,13 +426,21 @@ textarea.input {
   width: 30%;
 }
 
-.recipe-card__item-text p {
+.recipe-card__item-text p,
+.recipe-card__item-text li {
   font-size: 1.1875rem;
-  font-weight: 500;
   text-indent: 1.25rem;
 }
 
-.recipe-card__item-text p + p {
+.recipe-card__item-text ol li {
+  list-style-position: inside;
+}
+
+.recipe-card__item-text ol li::marker {
+  font-weight: 700;
+}
+
+.recipe-card__item-text ol li + li {
   margin-top: 0.375rem;
 }
 
