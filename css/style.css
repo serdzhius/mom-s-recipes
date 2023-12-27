@@ -4,7 +4,7 @@
 
 :root {
   --textColor: #111;
-  --accent: #0eb3ff;
+  --accent: #b945e7;
   --bg-Color: #e7e7e7;
   --bd-Color: #111;
 }
@@ -317,6 +317,15 @@ textarea.input {
           transform: translate(0, -50%) rotate(-40deg);
 }
 
+._spoller-init .spollers__title._spoller-active {
+  color: var(--accent);
+}
+
+._spoller-init .spollers__title._spoller-active::before,
+._spoller-init .spollers__title._spoller-active::after {
+  background-color: var(--accent);
+}
+
 ._spoller-init .spollers__title._spoller-active::before {
   -webkit-transform: translateX(-75%) rotate(-40deg);
       -ms-transform: translateX(-75%) rotate(-40deg);
@@ -585,15 +594,29 @@ textarea.input {
 
 @media (min-width: 29.99875em) {
   .spollers__body {
-    padding: 0.5rem 1rem 1rem;
+    padding: 1rem;
   }
 }
 
 @media (min-width: 47.99875em) {
   .spollers {
     gap: 0.9375rem;
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
+    max-width: 40%;
+    position: relative;
+  }
+
+  .no-webp .spollers::after{
+    background: url("../img/kitchen_utensils.png") 0 0/cover no-repeat; }
+
+  .spollers::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 147%;
+    height: 103%;
+    margin-left: 103%;
+    z-index: -1;
   }
 
   .spollers__title {
@@ -601,18 +624,15 @@ textarea.input {
     border: 1px solid var(--bd-Color);
   }
 
-  ._spoller-init .spollers__title._spoller-active {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    border-bottom: none;
-  }
-
   .spollers__body {
     border: 1px solid var(--bd-Color);
-    border-bottom-left-radius: 0.3125rem;
-    border-bottom-right-radius: 0.3125rem;
-    border-top: none;
     background-color: var(--bg-Color);
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 147%;
+    margin-left: 103%;
+    border-radius: 0.3125rem;
   }
 }
 
@@ -633,3 +653,8 @@ textarea.input {
 .webp body{ background-image: url(../img/bg-image.webp); }
 
 .webp .header__search-results{ background-image: url(../img/bg-image.webp); }
+
+@media (min-width: 47.99875em){
+
+  .webp .spollers::after{ background: url(../img/kitchen_utensils.webp) 0 0/cover no-repeat; }
+}
