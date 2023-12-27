@@ -196,7 +196,8 @@ textarea.input {
   position: absolute;
   display: inline-block;
   top: 0;
-  background-color: #337ab7;
+  background-color: var(--accent);
+  opacity: 0.5;
   border-radius: 100%;
   width: 35px;
   height: 35px;
@@ -612,7 +613,7 @@ textarea.input {
     content: "";
     position: absolute;
     top: 0;
-    left: 0%;
+    left: 0;
     width: 147%;
     height: 103%;
     margin-left: 103%;
