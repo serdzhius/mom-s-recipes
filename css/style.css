@@ -566,6 +566,20 @@ textarea.input {
   font-style: italic;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(160, 160, 160);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(42, 42, 42);
+  border-radius: 25px;
+  border: 1px solid rgb(160, 160, 160);
+}
+
 .categories {
   padding: 1.25rem 0;
 }
