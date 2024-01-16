@@ -570,14 +570,13 @@ textarea.input {
   width: 8px;
 }
 
-::-webkit-scrollbar-track {
-  background-color: rgb(160, 160, 160);
-}
+.no-webp ::-webkit-scrollbar-track{
+  background: url("../img/bg-image.jpg") 0 0/cover no-repeat; }
 
 ::-webkit-scrollbar-thumb {
   background-color: rgb(42, 42, 42);
   border-radius: 25px;
-  border: 1px solid rgb(160, 160, 160);
+  border-right: 1px solid #e1dabe;
 }
 
 .categories {
@@ -668,6 +667,8 @@ textarea.input {
 .webp body{ background-image: url(../img/bg-image.webp); }
 
 .webp .header__search-results{ background-image: url(../img/bg-image.webp); }
+
+.webp ::-webkit-scrollbar-track{ background: url(../img/bg-image.webp) 0 0/cover no-repeat; }
 
 @media (min-width: 47.99875em){
 
