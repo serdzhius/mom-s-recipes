@@ -492,7 +492,6 @@ textarea.input {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0.3125rem auto 0;
   position: relative;
 }
 
@@ -530,6 +529,7 @@ textarea.input {
 
 .header__input {
   display: block;
+  margin-top: 0.5rem;
 }
 
 .no-webp .header__search-results{
@@ -659,6 +659,10 @@ textarea.input {
 }
 
 @media (any-hover: hover) {
+  body {
+    padding: 0 calc(8px - (100vw - 100%)) 0 0;
+  }
+
   .recipes__link:hover {
     color: var(--accent);
   }
