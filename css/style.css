@@ -497,7 +497,6 @@ textarea.input {
 
 .header__container:not(.header__container--index) {
   position: absolute;
-  margin: 0;
   top: 0.3125rem;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
@@ -661,6 +660,10 @@ textarea.input {
 @media (any-hover: hover) {
   body {
     padding: 0 calc(8px - (100vw - 100%)) 0 0;
+  }
+
+  .header__container:not(.header__container--index) {
+    left: calc(50vw - 5px);
   }
 
   .recipes__link:hover {
