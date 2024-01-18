@@ -1,2 +1,1 @@
-# mom-s-recipes
-[Кулинарный блокнот](https://serdzhius.github.io/mom-s-recipes/)
+# mom-s-recipes# [Кулинарный блокнот](https://serdzhius.github.io/mom-s-recipes/)
