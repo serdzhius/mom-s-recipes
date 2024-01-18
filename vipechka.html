@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Выпечка</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240118104353">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="preloader">
+			<div class="preloader__row">
+				<div class="preloader__item"></div>
+				<div class="preloader__item"></div>
+				<div class="preloader__item"></div>
+			</div>
+		</div>
+		<header class="header">
+			<div class="header__container">
+				<a class="header__link" href="index.html">На главную</a>
+				<div class="header__counter"></div>
+				<h4 class="header__title">Выпечка</h4>
+				<input id="search" class="input" autocomplete="off" type="search" name="form[]" placeholder="Поиск">
+				<div id="results" class="header__search-results"></div>
+			</div>
+		</header>
+		<main class="page-vipechka">
+			<section class="vipechka">
+				<div class="vipechka__container">
+					<article id="vipechka-1" class="vipechka__item recipe-card">
+						<div class="recipe-card__top">
+							<button class="button__left" type="button">
+								<img src="img/arrow.svg" alt="left">
+							</button>
+							<h2 class="recipe-card__item-title">
+								Блины
+							</h2>
+							<button class="button__right" type="button">
+								<img src="img/arrow.svg" alt="right">
+							</button>
+						</div>
+						<table>
+							<h3 class="recipe-card__item-subtitle">Состав:</h3>
+							<tr>
+								<th>Продукты</th>
+								<th>Количество</th>
+							</tr>
+							<tr>
+								<td>яйца</td>
+								<td>2 шт.</td>
+							</tr>
+							<tr>
+								<td>мука</td>
+								<td>15 ст. ложки</td>
+							</tr>
+							<tr>
+								<td>сахара</td>
+								<td>3 ст. ложки</td>
+							</tr>
+							<tr>
+								<td>соль</td>
+								<td>1/2 ч. ложки</td>
+							</tr>
+							<tr>
+								<td>постного масла</td>
+								<td>3 ст. ложки</td>
+							</tr>
+							<tr>
+								<td>воды или молока</td>
+								<td>600 г</td>
+							</tr>
+						</table>
+						<div class="recipe-card__item-text">
+							<h3 class="recipe-card__item-subtitle">Приготовление:</h3>
+							<ol>
+								<li>Берём миску просеиваем муку, ложим сахар, соль, яйца, постное масло, молоко.</li>
+								<li>Всё хорошо перемешать.</li>
+								<li>На сковородку вылить порцию теста (примерно 50 - 70 г).</li>
+								<li>Обжарить с двух сторон.</li>
+							</ol>
+						</div>
+					</article>
+					<article id="vipechka-2" class="vipechka__item recipe-card">
+						<div class="recipe-card__top">
+							<button class="button__left" type="button">
+								<img src="img/arrow.svg" alt="left">
+							</button>
+							<h2 class="recipe-card__item-title">
+								Хачапури
+							</h2>
+							<button class="button__right" type="button">
+								<img src="img/arrow.svg" alt="right">
+							</button>
+						</div>
+						<table>
+							<h3 class="recipe-card__item-subtitle recipe-card__item-subtitle--part">Состав теста:</h3>
+							<tr>
+								<th>Продукты</th>
+								<th>Количество</th>
+							</tr>
+							<tr>
+								<td>кефир</td>
+								<td>300 г</td>
+							</tr>
+							<tr>
+								<td>яйцо</td>
+								<td>1 шт.</td>
+							</tr>
+							<tr>
+								<td>соль</td>
+								<td>1 ч. ложки</td>
+							</tr>
+							<tr>
+								<td>сахар</td>
+								<td>1 ч. ложки</td>
+							</tr>
+							<tr>
+								<td>сода</td>
+								<td>1 ч. ложки</td>
+							</tr>
+							<tr>
+								<td>постное масло</td>
+								<td>3 ст. ложки</td>
+							</tr>
+							<tr>
+								<td>мука</td>
+								<td>450 г</td>
+							</tr>
+						</table>
+						<table>
+							<h3 class="recipe-card__item-subtitle recipe-card__item-subtitle--part">Состав начинки:</h3>
+							<tr>
+								<th>Продукты</th>
+								<th>Количество</th>
+							</tr>
+							<tr>
+								<td>сыр</td>
+								<td>300 г</td>
+							</tr>
+							<tr>
+								<td>яйцо</td>
+								<td>1 шт.</td>
+							</tr>
+						</table>
+						<div class="recipe-card__item-text">
+							<h3 class="recipe-card__item-subtitle">Приготовление:</h3>
+							<ol>
+								<li>Сыр потереть на мелкой тёрке яйцо вбить ту даже.</li>
+								<li>Разровнять тесто, разделить на четыре части и в каждую положить начинку и жарить на сковороде.</li>
+							</ol>
+						</div>
+					</article>
+					<article id="vipechka-3" class="vipechka__item recipe-card">
+						<div class="recipe-card__top">
+							<button class="button__left" type="button">
+								<img src="img/arrow.svg" alt="left">
+							</button>
+							<h2 class="recipe-card__item-title">
+								Пирожки с картошкой
+							</h2>
+							<button class="button__right" type="button">
+								<img src="img/arrow.svg" alt="right">
+							</button>
+						</div>
+						<table>
+							<h3 class="recipe-card__item-subtitle">Состав:</h3>
+							<tr>
+								<th>Продукты</th>
+								<th>Количество</th>
+							</tr>
+							<tr>
+								<td>кефир</td>
+								<td>200 г</td>
+							</tr>
+							<tr>
+								<td>яйцо</td>
+								<td>1 шт.</td>
+							</tr>
+							<tr>
+								<td>соль</td>
+								<td>1 ч. ложка</td>
+							</tr>
+							<tr>
+								<td>сода</td>
+								<td>1 ч. ложка</td>
+							</tr>
+							<tr>
+								<td>сахар</td>
+								<td>1 ч. ложка</td>
+							</tr>
+							<tr>
+								<td>постное масло</td>
+								<td>1 ст. ложка</td>
+							</tr>
+							<tr>
+								<td>мука</td>
+								<td>400 г</td>
+							</tr>
+							<tr>
+								<td>картофель</td>
+								<td>400 г</td>
+							</tr>
+							<tr>
+								<td>лук</td>
+								<td>1 шт.</td>
+							</tr>
+						</table>
+						<div class="recipe-card__item-text">
+							<h3 class="recipe-card__item-subtitle">Приготовление:</h3>
+							<p>
+								Картофель отварить, а лук пожарить на сковородке, вместе потолочь. Сделать тесто, начинить и на
+								сковородку.
+							</p>
+						</div>
+					</article>
+					<article id="vipechka-4" class="vipechka__item recipe-card">
+						<div class="recipe-card__top">
+							<button class="button__left" type="button">
+								<img src="img/arrow.svg" alt="left">
+							</button>
+							<h2 class="recipe-card__item-title">
+								Чебуреки
+							</h2>
+							<button class="button__right" type="button">
+								<img src="img/arrow.svg" alt="right">
+							</button>
+						</div>
+						<table>
+							<h3 class="recipe-card__item-subtitle recipe-card__item-subtitle--part">Состав теста:</h3>
+							<tr>
+								<th>Продукты</th>
+								<th>Количество</th>
+							</tr>
+							<tr>
+								<td>мука</td>
+								<td>500 г</td>
+							</tr>
+							<tr>
+								<td>кипятка для теста</td>
+								<td>200 г</td>
+							</tr>
+							<tr>
+								<td>постного масла</td>
+								<td>50 г</td>
+							</tr>
+						</table>
+						<table>
+							<h3 class="recipe-card__item-subtitle recipe-card__item-subtitle--part">Состав начинки:</h3>
+							<tr>
+								<th>Продукты</th>
+								<th>Количество</th>
+							</tr>
+							<tr>
+								<td>фарш</td>
+								<td>300 г</td>
+							</tr>
+							<tr>
+								<td>лук</td>
+								<td>1 шт.</td>
+							</tr>
+						</table>
+						<div class="recipe-card__item-text">
+							<h3 class="recipe-card__item-subtitle">Приготовление:</h3>
+							<ol>
+								<li>Фарш перемешать с мелко нарезанным луком если нужно добавить воды 100 г.</li>
+								<li>Раскатать тесто, положить начинку, лепить чебуреки и жарить на сковороде.</li>
+							</ol>
+						</div>
+					</article>
+					<article id="vipechka-5" class="vipechka__item recipe-card">
+						<div class="recipe-card__top">
+							<button class="button__left" type="button">
+								<img src="img/arrow.svg" alt="left">
+							</button>
+							<h2 class="recipe-card__item-title">
+								Оладьи
+							</h2>
+							<button class="button__right" type="button">
+								<img src="img/arrow.svg" alt="right">
+							</button>
+						</div>
+						<table>
+							<h3 class="recipe-card__item-subtitle">Состав:</h3>
+							<tr>
+								<th>Продукты</th>
+								<th>Количество</th>
+							</tr>
+							<tr>
+								<td>кефир</td>
+								<td>500 г</td>
+							</tr>
+							<tr>
+								<td>мука</td>
+								<td>500 г</td>
+							</tr>
+							<tr>
+								<td>яйцо</td>
+								<td>3 шт.</td>
+							</tr>
+							<tr>
+								<td>сахар</td>
+								<td>3 ст. ложки</td>
+							</tr>
+							<tr>
+								<td>постное масло</td>
+								<td>3 ст. ложки</td>
+							</tr>
+							<tr>
+								<td>соль</td>
+								<td>1 ч. ложка</td>
+							</tr>
+							<tr>
+								<td>сода</td>
+								<td>1 ч. ложка</td>
+							</tr>
+						</table>
+						<div class="recipe-card__item-text">
+							<h3 class="recipe-card__item-subtitle">Приготовление:</h3>
+							<p>
+								Всё перемешать и на сковороду накладывать 1ст. ложку на один оладик. Обжарить с двух сторон.
+							</p>
+						</div>
+					</article>
+					<article id="vipechka-6" class="vipechka__item recipe-card">
+						<div class="recipe-card__top">
+							<button class="button__left" type="button">
+								<img src="img/arrow.svg" alt="left">
+							</button>
+							<h2 class="recipe-card__item-title">
+								Драники с ветчиной и сыром
+							</h2>
+							<button class="button__right" type="button">
+								<img src="img/arrow.svg" alt="right">
+							</button>
+						</div>
+						<table>
+							<h3 class="recipe-card__item-subtitle">Состав:</h3>
+							<tr>
+								<th>Продукты</th>
+								<th>Количество</th>
+							</tr>
+							<tr>
+								<td>картофель</td>
+								<td>600 г</td>
+							</tr>
+							<tr>
+								<td>яйцо</td>
+								<td>2 шт.</td>
+							</tr>
+							<tr>
+								<td>сыр</td>
+								<td>100 г</td>
+							</tr>
+							<tr>
+								<td>ветчина</td>
+								<td>200 г</td>
+							</tr>
+							<tr>
+								<td>мука</td>
+								<td>2 ст. ложки</td>
+							</tr>
+						</table>
+						<div class="recipe-card__item-text">
+							<h3 class="recipe-card__item-subtitle">Приготовление:</h3>
+							<ol>
+								<li>Картофель и сыр потереть на тёрке, ветчину порезать мелкими кусочками.</li>
+								<li>Всё перемешать.</li>
+								<li>Лепить драники и на сковородку.</li>
+								<li>Жарить под крышкой до румяной корочки.</li>
+							</ol>
+						</div>
+					</article>
+					<article id="vipechka-7" class="vipechka__item recipe-card">
+						<div class="recipe-card__top">
+							<button class="button__left" type="button">
+								<img src="img/arrow.svg" alt="left">
+							</button>
+							<h2 class="recipe-card__item-title">
+								Вареники
+							</h2>
+							<button class="button__right" type="button">
+								<img src="img/arrow.svg" alt="right">
+							</button>
+						</div>
+						<table>
+							<h3 class="recipe-card__item-subtitle recipe-card__item-subtitle--part">Состав теста:</h3>
+							<tr>
+								<th>Продукты</th>
+								<th>Количество</th>
+							</tr>
+							<tr>
+								<td>мука</td>
+								<td>300 г</td>
+							</tr>
+							<tr>
+								<td>соль</td>
+								<td>1 ч. ложка</td>
+							</tr>
+							<tr>
+								<td>постное масло</td>
+								<td>3 ст. ложки</td>
+							</tr>
+							<tr>
+								<td>крутого кипятка</td>
+								<td>150 г</td>
+							</tr>
+						</table>
+						<table>
+							<h3 class="recipe-card__item-subtitle recipe-card__item-subtitle--part">Состав начинки из фарша или
+								картофеля:</h3>
+							<tr>
+								<th>Продукты</th>
+								<th>Количество</th>
+							</tr>
+							<tr>
+								<td>фарш или <br> картофель</td>
+								<td>200 г или <br> 500 г</td>
+							</tr>
+							<tr>
+								<td>лук</td>
+								<td>1 шт.</td>
+							</tr>
+							<tr>
+								<td>соль</td>
+								<td>0,5 ч. ложки</td>
+							</tr>
+							<tr>
+								<td>перец молотый</td>
+								<td>0,5 ч. ложки</td>
+							</tr>
+						</table>
+						<div class="recipe-card__item-text">
+							<h3 class="recipe-card__item-subtitle">Приготовление:</h3>
+							<ol>
+								<li>Лук мелко порезать и поджарить, поделить на две части одна для добавления в варёный картофель и
+									вместе потолочь, и оставшуюся часть полить вареники.</li>
+								<li>Вареники с фаршем лук добавляется порезанный сырой.</li>
+								<li>В кастрюле с закипевшей водой ложем вареники на 5 - 7 мин. с фаршем готовится чуть дольше.</li>
+							</ol>
+						</div>
+					</article>
+					<article id="vipechka-8" class="vipechka__item recipe-card">
+						<div class="recipe-card__top">
+							<button class="button__left" type="button">
+								<img src="img/arrow.svg" alt="left">
+							</button>
+							<h2 class="recipe-card__item-title">
+								Треугольник с колбасой
+							</h2>
+							<button class="button__right" type="button">
+								<img src="img/arrow.svg" alt="right">
+							</button>
+						</div>
+						<table>
+							<h3 class="recipe-card__item-subtitle">Состав:</h3>
+							<tr>
+								<th>Продукты</th>
+								<th>Количество</th>
+							</tr>
+							<tr>
+								<td>кефир</td>
+								<td>120 г</td>
+							</tr>
+							<tr>
+								<td>колбаса</td>
+								<td>100 г</td>
+							</tr>
+							<tr>
+								<td>мука</td>
+								<td>250 г</td>
+							</tr>
+							<tr>
+								<td>яйцо</td>
+								<td>1 шт.</td>
+							</tr>
+							<tr>
+								<td>зелень (укроп или петрушка)</td>
+								<td>40 г</td>
+							</tr>
+							<tr>
+								<td>сахар</td>
+								<td>1 ст. ложка</td>
+							</tr>
+							<tr>
+								<td>соль</td>
+								<td>1 ч. ложка</td>
+							</tr>
+							<tr>
+								<td>сода</td>
+								<td>0,5 ч. ложки</td>
+							</tr>
+						</table>
+						<div class="recipe-card__item-text">
+							<h3 class="recipe-card__item-subtitle">Приготовление:</h3>
+							<ol>
+								<li>Замесить тесто.</li>
+								<li>Замесить раскатать и сделать треугольники, начинить начинкой.</li>
+								<li>Поджарить с двух сторон на сковородке.</li>
+							</ol>
+						</div>
+					</article>
+					<article id="vipechka-9" class="vipechka__item recipe-card">
+						<div class="recipe-card__top">
+							<button class="button__left" type="button">
+								<img src="img/arrow.svg" alt="left">
+							</button>
+							<h2 class="recipe-card__item-title">
+								Беляши
+							</h2>
+							<button class="button__right" type="button">
+								<img src="img/arrow.svg" alt="right">
+							</button>
+						</div>
+						<table>
+							<h3 class="recipe-card__item-subtitle">Состав:</h3>
+							<tr>
+								<th>Продукты</th>
+								<th>Количество</th>
+							</tr>
+							<tr>
+								<td>фарш (начинка)</td>
+								<td>500 г</td>
+							</tr>
+							<tr>
+								<td>теплой воды</td>
+								<td>500 г</td>
+							</tr>
+							<tr>
+								<td>мука</td>
+								<td>4 стакана</td>
+							</tr>
+							<tr>
+								<td>лук</td>
+								<td>1 шт.</td>
+							</tr>
+							<tr>
+								<td>постное масло</td>
+								<td>100 г</td>
+							</tr>
+							<tr>
+								<td>сухие дрожжи</td>
+								<td>50 г</td>
+							</tr>
+							<tr>
+								<td>сахар</td>
+								<td>1 ст. ложка</td>
+							</tr>
+							<tr>
+								<td>соль</td>
+								<td>1 щепотка</td>
+							</tr>
+						</table>
+						<div class="recipe-card__item-text">
+							<h3 class="recipe-card__item-subtitle">Приготовление:</h3>
+							<ol>
+								<li>Берём миску просеиваем муку, всыпаем сахар, соль, сухие дрожжи и добавить тёплую воду.</li>
+								<li>Замесить тесто.</li>
+								<li>Обжарить лук и добавить в фарш.</li>
+								<li>Начинить порции теста фаршем и обжарить на сковородке.</li>
+							</ol>
+						</div>
+					</article>
+					<article id="vipechka-10" class="vipechka__item recipe-card">
+						<div class="recipe-card__top">
+							<button class="button__left" type="button">
+								<img src="img/arrow.svg" alt="left">
+							</button>
+							<h2 class="recipe-card__item-title">
+								Сметанник
+							</h2>
+							<button class="button__right" type="button">
+								<img src="img/arrow.svg" alt="right">
+							</button>
+						</div>
+						<h3 class="recipe-card__item-subtitle recipe-card__item-subtitle--center">В духовке.</h3>
+						<table>
+							<h3 class="recipe-card__item-subtitle">Состав:</h3>
+							<tr>
+								<th>Продукты</th>
+								<th>Количество</th>
+							</tr>
+							<tr>
+								<td>сметана</td>
+								<td>1 стакан</td>
+							</tr>
+							<tr>
+								<td>сахар</td>
+								<td>1 стакан</td>
+							</tr>
+							<tr>
+								<td>яйцо</td>
+								<td>3 шт.</td>
+							</tr>
+							<tr>
+								<td>мука</td>
+								<td>1 стакан</td>
+							</tr>
+							<tr>
+								<td>сода</td>
+								<td>0,5 ч. ложки</td>
+							</tr>
+						</table>
+						<div class="recipe-card__item-text">
+							<h3 class="recipe-card__item-subtitle">Приготовление:</h3>
+							<ol>
+								<li>Всё перемешать.</li>
+								<li>Противень смазать постным маслом.</li>
+								<li>Залить тесто и в духовку 180°C на 30 мин.</li>
+							</ol>
+						</div>
+					</article>
+					<article id="vipechka-11" class="vipechka__item recipe-card">
+						<div class="recipe-card__top">
+							<button class="button__left" type="button">
+								<img src="img/arrow.svg" alt="left">
+							</button>
+							<h2 class="recipe-card__item-title">
+								Бублики
+							</h2>
+							<button class="button__right" type="button">
+								<img src="img/arrow.svg" alt="right">
+							</button>
+						</div>
+						<table>
+							<h3 class="recipe-card__item-subtitle recipe-card__item-subtitle--center">В духовке.</h3>
+							<h3 class="recipe-card__item-subtitle">Состав:</h3>
+							<tr>
+								<th>Продукты</th>
+								<th>Количество</th>
+							</tr>
+							<tr>
+								<td>бублики</td>
+								<td>1 кг.</td>
+							</tr>
+							<tr>
+								<td>фарш</td>
+								<td>500 г.</td>
+							</tr>
+							<tr>
+								<td>молоко</td>
+								<td>1 стакан</td>
+							</tr>
+							<tr>
+								<td>соль (для фарша)</td>
+								<td>по вкусу</td>
+							</tr>
+							<tr>
+								<td>перец (для фарша)</td>
+								<td>по вкусу</td>
+							</tr>
+							<tr>
+								<td>майонез</td>
+								<td>по вкусу</td>
+							</tr>
+						</table>
+						<div class="recipe-card__item-text">
+							<h3 class="recipe-card__item-subtitle">Приготовление:</h3>
+							<ol>
+								<li>Молоко вылить в миску.</li>
+								<li>Бублики поместить в миску с молоком на 5 - 7 мин. до смягчения их формы (но что бы не раскисли).
+								</li>
+								<li>Вытаскиваем бублики выкладываем на противень и начиняем фаршем.</li>
+								<li>На фарш ложем не много майонеза.</li>
+								<li>И в духовку 180°C на 40 мин.</li>
+							</ol>
+						</div>
+					</article>
+					<article id="vipechka-12" class="vipechka__item recipe-card">
+						<div class="recipe-card__top">
+							<button class="button__left" type="button">
+								<img src="img/arrow.svg" alt="left">
+							</button>
+							<h2 class="recipe-card__item-title">
+								Кекс со сгущенкой
+							</h2>
+							<button class="button__right" type="button">
+								<img src="img/arrow.svg" alt="right">
+							</button>
+						</div>
+						<table>
+							<h3 class="recipe-card__item-subtitle recipe-card__item-subtitle--center">В духовке.</h3>
+							<h3 class="recipe-card__item-subtitle">Состав:</h3>
+							<tr>
+								<th>Продукты</th>
+								<th>Количество</th>
+							</tr>
+							<tr>
+								<td>сгущённое молоко</td>
+								<td>250 г</td>
+							</tr>
+							<tr>
+								<td>яйцо</td>
+								<td>4 шт.</td>
+							</tr>
+							<tr>
+								<td>мука</td>
+								<td>150 г</td>
+							</tr>
+							<tr>
+								<td>сливочное масло</td>
+								<td>50 г</td>
+							</tr>
+							<tr>
+								<td>сода / разрыхлитель</td>
+								<td>1 ч. ложка</td>
+							</tr>
+						</table>
+						<div class="recipe-card__item-text">
+							<h3 class="recipe-card__item-subtitle">Приготовление:</h3>
+							<ol>
+								<li>Смешиваем сгущенку с яйцами до однородной консистенции. Добавляем растопленное сливочное масло и продолжаем взбивать.</li>
+								<li>Всыпаем муку и разрыхлитель или соду и хорошо размешать. Консистенция теста должна получиться как густая сметана.</li>
+								<li>Выливаем массу в форму для запекания, смазанную маслом.</li>
+								<li>Ставим форму в разогретую духовку и выпекаем при средней температуре (не больше 180 градусов) около 50 минут.</li>
+							</ol>
+						</div>
+						<div class="recipe-card__item-text">
+							<h3 class="recipe-card__item-subtitle recipe-card__item-subtitle--notes">Примечания:</h3>
+							<a class="recipe-card__item-link" target="_blank" href="https://food.znaj.ua/ru/474135-zapashna-domashnya-vipichka-zi-zgushchenim-molokom-cey-nizhniy-keks-stane-vashim-ulyublenim">
+								<picture><source srcset="img/recipe.webp" type="image/webp"><img src="img/recipe.png" alt="recipe"></picture>
+								<p>Статья по готовке</p>
+							</a>
+						</div>
+					</article>
+				</div>
+			</section>
+		</main>
+	</div>
+	<script src="js/app.min.js?_v=20240118104353"></script>
+</body>
+
+</html>
