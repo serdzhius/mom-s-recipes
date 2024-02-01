@@ -173,88 +173,14 @@ textarea.input {
   top: 0;
   right: 0;
   bottom: 0;
-  /* фоновый цвет элемента */
-  background: var(--bgColor);
-  /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
-  z-index: 1001;
-}
-
-.preloader__row {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  width: 70px;
-  height: 70px;
-  margin-top: -35px;
-  margin-left: -35px;
-  text-align: center;
-  -webkit-animation: preloader-rotate 2s infinite linear;
-          animation: preloader-rotate 2s infinite linear;
-}
-
-.preloader__item {
-  position: absolute;
-  display: inline-block;
-  top: 0;
-  background-color: var(--accent);
-  opacity: 0.5;
-  border-radius: 100%;
-  width: 35px;
-  height: 35px;
-  -webkit-animation: preloader-bounce 2s infinite ease-in-out;
-          animation: preloader-bounce 2s infinite ease-in-out;
-}
-
-.preloader__item:nth-child(2) {
-  top: 17.5px;
-  left: 0;
-  -webkit-animation-delay: -1.5s;
-          animation-delay: -1.5s;
-}
-
-.preloader__item:last-child {
-  top: auto;
-  bottom: 0;
-  -webkit-animation-delay: -1s;
-          animation-delay: -1s;
-}
-
-@-webkit-keyframes preloader-rotate {
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes preloader-rotate {
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@-webkit-keyframes preloader-bounce {
-  0%, 100% {
-    -webkit-transform: scale(0.2);
-            transform: scale(0.2);
-  }
-
-  50% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
-@keyframes preloader-bounce {
-  0%, 100% {
-    -webkit-transform: scale(0.2);
-            transform: scale(0.2);
-  }
-
-  50% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
+  z-index: 10;
+  /* From https://css.glass */
+  background: rgba(240, 229, 189, 0.16);
+  border-radius: 16px;
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(1.9px);
+          backdrop-filter: blur(1.9px);
 }
 
 .loaded_hiding .preloader {

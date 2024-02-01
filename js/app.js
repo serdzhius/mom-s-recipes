@@ -338,7 +338,7 @@
         setTimeout((function() {
             document.body.classList.add("loaded");
             document.body.classList.remove("loaded_hiding");
-        }), 500);
+        }), 300);
     }));
     let id = location.hash;
     if (id) document.querySelector(id).style.display = "block";
