@@ -398,7 +398,16 @@
         }
         buttonsLeft.forEach((button => button.addEventListener("click", previousChild)));
         buttonsRight.forEach((button => button.addEventListener("click", nextChild)));
+        document.addEventListener("keydown", (function(event) {
+            if (event.key === "ArrowLeft") previousChild(); else if (event.key === "ArrowRight") nextChild();
+        }));
     }
+    document.addEventListener("keydown", (function(event) {
+        if (event.key === "Escape") {
+            if (!document.querySelector(".page")) window.location.href = "index.html";
+            event.preventDefault();
+        }
+    }));
     document.addEventListener("DOMContentLoaded", (function() {
         function updateCounter() {
             const articles = Array.from(document.querySelectorAll("article[id]"));
