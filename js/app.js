@@ -373,7 +373,7 @@
             results.innerHTML = "";
         }
     }));
-    if (window.location.pathname !== "/index.html") {
+    if (!document.querySelector("main.page")) {
         let children = document.querySelectorAll(".recipe-card");
         let buttonsLeft = document.querySelectorAll(".button__left");
         let buttonsRight = document.querySelectorAll(".button__right");
@@ -399,7 +399,7 @@
         buttonsLeft.forEach((button => button.addEventListener("click", previousChild)));
         buttonsRight.forEach((button => button.addEventListener("click", nextChild)));
         document.addEventListener("keydown", (function(event) {
-            if (window.location.pathname !== "/index.html") if (event.key === "ArrowLeft") previousChild(); else if (event.key === "ArrowRight") nextChild(); else if (event.key === "Escape") {
+            if (!document.querySelector("main.page")) if (event.key === "ArrowLeft") previousChild(); else if (event.key === "ArrowRight") nextChild(); else if (event.key === "Escape") {
                 window.location.href = "index.html";
                 event.preventDefault();
             }
