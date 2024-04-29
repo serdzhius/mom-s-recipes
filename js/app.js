@@ -399,11 +399,27 @@
         buttonsLeft.forEach((button => button.addEventListener("click", previousChild)));
         buttonsRight.forEach((button => button.addEventListener("click", nextChild)));
         document.addEventListener("keydown", (function(event) {
-            if (!document.querySelector("main.page")) if (event.key === "ArrowLeft") previousChild(); else if (event.key === "ArrowRight") nextChild(); else if (event.key === "Escape") {
+            if (event.key === "ArrowLeft") previousChild(); else if (event.key === "ArrowRight") nextChild(); else if (event.key === "Backspace") {
                 window.location.href = "index.html";
                 event.preventDefault();
             }
         }));
+        if ("ontouchstart" in window || navigator.maxTouchPoints) {
+            let startX;
+            let startY;
+            let distX;
+            let distY;
+            let threshold = 120;
+            document.addEventListener("touchstart", (function(e) {
+                startX = e.changedTouches[0].pageX;
+                startY = e.changedTouches[0].pageY;
+            }), false);
+            document.addEventListener("touchend", (function(e) {
+                distX = e.changedTouches[0].pageX - startX;
+                distY = e.changedTouches[0].pageY - startY;
+                if (Math.abs(distX) >= threshold && Math.abs(distY) <= 100) if (distX > 0) previousChild(); else nextChild();
+            }), false);
+        }
     }
     document.addEventListener("DOMContentLoaded", (function() {
         function updateCounter() {
