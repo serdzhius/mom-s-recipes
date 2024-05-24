@@ -2,11 +2,11 @@
 <html lang="ru">
 
 <head>
-	<title>Холодные закуски</title>
+	<title>Холодные блюда</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240210131304">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240524203450">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,18 +21,26 @@
 			<div class="header__container">
 				<a class="header__link" href="index.html">На главную</a>
 				<div class="header__counter"></div>
-				<h4 class="header__title">Холодные закуски</h4>
+				<h4 class="header__title">Холодные блюда</h4>
 				<input id="search" class="input" autocomplete="off" type="search" name="form[]" placeholder="Поиск">
 				<div id="results" class="header__search-results"></div>
 			</div>
 		</header>
-		<main class="page-cold-appetizers">
-			<section class="cold-appetizers">
-				<div class="cold-appetizers__container">
-					<article id="cold-appetizers-1" class="cold-appetizers__item recipe-card">
-						<h2 class="recipe-card__item-title">
-							Холодец
-						</h2>
+		<main class="page-coldishes">
+			<section class="coldishes">
+				<div class="coldishes__container">
+					<article id="coldishes-1" class="coldishes__item recipe-card">
+						<div class="recipe-card__top">
+							<button class="button__left" type="button">
+								<img src="img/arrow.svg" alt="left">
+							</button>
+							<h2 class="recipe-card__item-title">
+								Холодец
+							</h2>
+							<button class="button__right" type="button">
+								<img src="img/arrow.svg" alt="right">
+							</button>
+						</div>
 						<table>
 							<h3 class="recipe-card__item-subtitle">Состав:</h3>
 							<tr>
@@ -76,11 +84,76 @@
 							</ol>
 						</div>
 					</article>
+					<article id="coldishes-2" class="coldishes__item recipe-card">
+						<div class="recipe-card__top">
+							<button class="button__left" type="button">
+								<img src="img/arrow.svg" alt="left">
+							</button>
+							<h2 class="recipe-card__item-title">
+								Окрошка
+							</h2>
+							<button class="button__right" type="button">
+								<img src="img/arrow.svg" alt="right">
+							</button>
+						</div>
+						<table>
+							<h3 class="recipe-card__item-subtitle">Состав:</h3>
+							<tr>
+								<th>Продукты</th>
+								<th>Количество</th>
+							</tr>
+							<tr>
+								<td>сыворотка</td>
+								<td>2 литра</td>
+							</tr>
+							<tr>
+								<td>картофель</td>
+								<td>300 г</td>
+							</tr>
+							<tr>
+								<td>филе куриное / колбаса</td>
+								<td>300 г</td>
+							</tr>
+							<tr>
+								<td>яйцо</td>
+								<td>4 шт.</td>
+							</tr>
+							<tr>
+								<td>огурец свежий</td>
+								<td>3 шт.</td>
+							</tr>
+							<tr>
+								<td>сметана</td>
+								<td>100 г</td>
+							</tr>
+							<tr>
+								<td>лук</td>
+								<td>небольшой пучок</td>
+							</tr>
+							<tr>
+								<td>укроп</td>
+								<td>небольшой пучок</td>
+							</tr>
+							<tr>
+								<td>соль</td>
+								<td>по вкусу</td>
+							</tr>
+						</table>
+						<div class="recipe-card__item-text">
+							<h3 class="recipe-card__item-subtitle">Приготовление:</h3>
+							<ol>
+								<li>Картофель, филе, яйцо всё отворить и порезать. Сложить в кастрюлю.</li>
+								<li>Мелко порезать лук и укроп, положить в кастрюлю.</li>
+								<li>Залить сывороткой, посолить и перемешать.</li>
+								<li>Заправить сметаной и перемешать.</li>
+							</ol>
+						</div>
+					</article>
 				</div>
 			</section>
 		</main>
 	</div>
-	<script src="js/app.min.js?_v=20240210131304"></script>
+	<script src="js/app.min.js?_v=20240524203450"></script>
 </body>
 
 </html>
