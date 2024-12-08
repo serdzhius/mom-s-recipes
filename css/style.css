@@ -138,7 +138,7 @@ body {
 */
 
 [class*=__container] {
-  max-width: 63.75rem;
+  max-width: 68.75rem;
   margin: 0 auto;
   padding: 0 0.625rem;
 }
@@ -433,6 +433,10 @@ textarea.input {
   gap: 0.3125rem;
 }
 
+.header__container--index {
+  overflow: hidden;
+}
+
 .header__link {
   display: block;
   font-size: 1.25rem;
@@ -608,7 +612,7 @@ textarea.input {
   }
 
   .header__container:not(.header__container--index) {
-    left: calc(50vw - 5px);
+    left: calc(50vw - 4px);
   }
 
   .recipes__link:hover {
