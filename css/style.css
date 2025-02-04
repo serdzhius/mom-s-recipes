@@ -433,10 +433,6 @@ textarea.input {
   gap: 0.3125rem;
 }
 
-.header__container--index {
-  overflow: hidden;
-}
-
 .header__link {
   display: block;
   font-size: 1.25rem;
@@ -458,7 +454,8 @@ textarea.input {
 
 .header__input {
   display: block;
-  margin-top: 0.5rem;
+  position: relative;
+  top: 0.5rem;
 }
 
 .no-webp .header__search-results{
@@ -466,7 +463,7 @@ textarea.input {
 
 .header__search-results {
   position: absolute;
-  top: 2.5rem;
+  top: 3rem;
   left: 0.625rem;
   width: calc(100% - 1.25rem);
   z-index: 1;
@@ -478,6 +475,8 @@ textarea.input {
   padding: 0.5rem 1.25rem;
   border: 1px solid #111;
   border-radius: 0.3125rem;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
 }
 
 .header__search-results a + a {
@@ -509,7 +508,7 @@ textarea.input {
 }
 
 .categories {
-  padding: 1.25rem 0;
+  padding: 1.75rem 0;
 }
 
 .recipes__item {
@@ -613,6 +612,10 @@ textarea.input {
 
   .header__container:not(.header__container--index) {
     left: calc(50vw - 4px);
+  }
+
+  .header__search-results a:hover {
+    color: var(--accent);
   }
 
   .recipes__link:hover {

@@ -363,8 +363,7 @@
                 link.textContent = element.textContent;
                 results.appendChild(link);
             }));
-            if (filteredElements.length === 0) results.textContent = "Совпадений нет";
-        }
+        } else results.textContent = "Совпадений нет";
     }));
     document.addEventListener("click", (function(event) {
         const target = event.target;
