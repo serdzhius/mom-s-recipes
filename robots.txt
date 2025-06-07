@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: /
-
-Allow: /mom-s-recipes/
+Allow: /
+Host: https://serdzhius.github.io
+Sitemap: https://serdzhius.github.io/mom-s-recipes/sitemap.xml 
